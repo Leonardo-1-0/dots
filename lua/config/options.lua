@@ -27,3 +27,4 @@ vim.opt.cursorline = true -- Enable highlighting of the current line
 vim.opt.list = true -- Show some invisible characters (tabs...
 vim.opt.mouse = "a" -- Enable mouse mode
 vim.opt.signcolumn = "yes" -- Always show the signcolumn, otherwise it would shift the text each time
+vim.opt.termguicolors = true -- True color support so notify doesn't bitch
