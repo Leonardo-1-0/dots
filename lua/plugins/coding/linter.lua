@@ -6,7 +6,15 @@ return {
     event = { "BufWritePost", "BufReadPost", "InsertLeave" },
     opts = {
         linters_by_ft = {
-            python = { "flake8", "mypy" },
+            ["python"] = { "flake8", "mypy" },
+            ["latex"] = { "latexindent" },
+            ["java"] = { "clang-format" },
+            ["haskell"] = { "fourmolu" },
+            ["c"] = { "clang-format" },
+            ["c#"] = { "clang-format" },
+            ["c++"] = { "clang-format" },
+            ["sql"] = { "sqlfmt" },
+            ["*"] = { "prettier" },
             -- Use the "*" filetype to run linters on all filetypes.
             -- ['*'] = { 'global linter' },
             -- Use the "_" filetype to run linters on filetypes that don't have other linters configured.
