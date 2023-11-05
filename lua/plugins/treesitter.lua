@@ -1,7 +1,7 @@
 return {
     "nvim-treesitter/nvim-treesitter",
 
-    version = false, -- last release is way too old and doesn't work on Windows
+    event = { "BufReadPre", "BufNewFile" },
     build = ":TSUpdate",
     init = function(plugin)
         require("lazy.core.loader").add_to_rtp(plugin)
@@ -10,10 +10,11 @@ return {
 
     dependencies = {
         "nvim-treesitter/nvim-treesitter-textobjects",
-        config = function()
-            local configs = require("nvim-treesitter.configs")
-        end,
+        "windwp/nvim-ts-autotag",
     },
+    config = function()
+        local configs = require("nvim-treesitter.configs")
+    end,
     cmd = { "TSUpdateSync", "TSUpdate", "TSInstall" },
     opts = {
         highlight = { enable = true },
@@ -35,5 +36,5 @@ return {
             "vimdoc",
             "yaml",
         },
-    }
+    },
 }
