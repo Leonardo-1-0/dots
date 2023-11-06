@@ -11,6 +11,9 @@ download nvm, the node version manager. It will allow you to download and set a 
 ### NVM download/setup
 
 These two commands will do all for you, just follow [this guide](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/)
+
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
 or
+
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
