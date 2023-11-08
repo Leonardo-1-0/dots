@@ -1,6 +1,6 @@
 # tmux
 
-### Setup
+## Setup
 
 Install tmux
 
@@ -8,8 +8,9 @@ Install tmux
 $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-Enter tmux and execute C-b I to install the plugins in .tmux.conf and reload tmux with
-
+Reload the config with
 ```bash
 $ tmux source ~/.tmux.conf
 ```
+Enter tmux and execute C-b I to install the plugins in .tmux.conf
+
