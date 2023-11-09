@@ -7,17 +7,34 @@ return {
 
     opts = {
         ensure_installed = {
+            -- lsp
             "lua-language-server",
-            "pyright", -- lsp
-            "mypy", -- python linter
-            "flake8", -- python linter
-            "black", -- python formatter
-            "isort", -- python formatter
-            "shellcheck",
-            "shfmt",
+            "pyright",
             "texlab",
-            "textlint",
+            "bash-language-server",
             "clangd",
+            "jdtls",
+            "haskell-language-server",
+            "sqlls",
+
+            -- formatters
+            "stylua",
+            "isort",
+            "black",
+            "latexindent",
+            "shfmt",
+            "clang-format",
+            "sqlfmt",
+
+            -- linters
+            "selene",
+            "flake8",
+            "mypy",
+            "texlint",
+            "shellcheck ",
+            "checkstyle",
+            "cpplint",
+            "sqlfluff",
         },
     },
 }

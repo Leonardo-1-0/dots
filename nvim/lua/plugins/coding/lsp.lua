@@ -12,19 +12,6 @@ return {
 
         local capabilities = cmp_nvim_lsp.default_capabilities()
 
-        lspconfig.pyright.setup({
-            capabilities = capabilities,
-        })
-        lspconfig.texlab.setup({
-            capabilities = capabilities,
-        })
-        lspconfig.clangd.setup({
-            capabilities = capabilities,
-        })
-        lspconfig.jdtls.setup({
-            capabilities = capabilities,
-        })
-        lspconfig.hls.setup({}) -- haskell language server
         lspconfig.lua_ls.setup({
             capabilities = capabilities,
             settings = {
@@ -42,6 +29,27 @@ return {
                     },
                 },
             },
+        })
+        lspconfig.pyright.setup({
+            capabilities = capabilities,
+        })
+        lspconfig.texlab.setup({
+            capabilities = capabilities,
+        })
+        lspconfig.bashls.setup({
+            capabilities = capabilities,
+        })
+        lspconfig.clangd.setup({
+            capabilities = capabilities,
+        })
+        lspconfig.jdtls.setup({
+            capabilities = capabilities,
+        })
+        lspconfig.hls.setup({
+            capabilities = capabilities,
+        }) -- haskell language server
+        lspconfig.sqlls.setup({
+            capabilities = capabilities,
         })
 
         local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
