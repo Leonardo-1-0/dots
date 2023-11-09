@@ -8,7 +8,7 @@ return {
         formatters_by_ft = {
             lua = { "stylua" },
             python = { "isort", "black" },
-            latex = { "vale" },
+            latex = { "latexindent" },
             java = { "checkstyle" },
             c = { "cpplint" },
             cpp = { "cpplint" },

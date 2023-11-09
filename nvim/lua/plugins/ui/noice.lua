@@ -1,6 +1,10 @@
 return {
     "folke/noice.nvim",
 
+    dependencies = {
+        "MunifTanjim/nui.nvim",
+        "rcarriga/nvim-notify",
+    },
     init = function()
         local noice = require("noice").setup({
             lsp = {
@@ -20,11 +24,9 @@ return {
         })
         local notify = require("notify").setup({
             background_colour = "#000000",
+            render = "compact",
+            --[[ stages = "static", ]]
+            level = "WARN",
         })
     end,
-
-    dependencies = {
-        "MunifTanjim/nui.nvim",
-        "rcarriga/nvim-notify",
-    },
 }
