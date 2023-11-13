@@ -37,7 +37,7 @@ return {
             "selene",
             "flake8",
             "mypy",
-            "texlint",
+            "vale",
             "shellcheck ",
             "checkstyle",
             "cpplint",
