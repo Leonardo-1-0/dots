@@ -2,10 +2,17 @@ return {
     "williamboman/mason.nvim",
 
     init = function()
-        local mason = require("mason").setup()
+        require("mason").setup({})
     end,
 
     opts = {
+        ui = {
+            icons = {
+                package_installed = "✓",
+                package_pending = "➜",
+                package_uninstalled = "✗",
+            },
+        },
         ensure_installed = {
             -- lsp
             "lua-language-server",
