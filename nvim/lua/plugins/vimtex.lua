@@ -1,3 +1,10 @@
 return {
-    "lervag/vimtex"
+    "lervag/vimtex",
+
+    event = {
+        "BufEnter *.sty",
+    },
+    ft = {
+        "tex",
+    },
 }
