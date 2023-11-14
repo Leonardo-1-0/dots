@@ -4,6 +4,7 @@ return {
     ft = {
         "python",
         "haskell",
+        "sql",
     },
     config = function()
         vim.g.slime_target = "tmux"
