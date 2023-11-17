@@ -8,9 +8,9 @@ return {
     end,
     config = function()
         vim.g.mkdp_auto_start = 0
-        vim.g.mkdp_auto_close = 1
+        vim.g.mkdp_auto_close = 0
         vim.g.mkdp_refresh_slow = 0
-        vim.g.mkdp_browser = "/snap/bin/firefox"
+        vim.g.mkdp_browser = "/usr/bin/firefox"
         vim.g.mkdp_theme = "light"
     end,
     keys = {
