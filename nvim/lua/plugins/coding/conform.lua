@@ -9,6 +9,8 @@ return {
             lua = { "stylua" },
             python = { "isort", "black" },
             latex = { "latexindent" },
+            html = { "htmlbeautifier" },
+            markdown = { "mdformat" },
             sh = { "shfmt" },
             java = { "clang-format" },
             c = { "clang-format" },

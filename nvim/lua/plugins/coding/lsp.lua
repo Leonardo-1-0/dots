@@ -51,6 +51,10 @@ return {
         lspconfig.sqlls.setup({
             capabilities = capabilities,
         })
+        lspconfig.html.setup({
+            capabilities = capabilities,
+            filetypes = { "html", "markdown" },
+        })
 
         local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
         for type, icon in pairs(signs) do

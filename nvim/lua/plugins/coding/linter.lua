@@ -8,18 +8,12 @@ return {
         linters_by_ft = {
             ["lua"] = { "selene" },
             ["python"] = { "flake8", "mypy" },
-            ["latex"] = { "vale" },
             ["bash"] = { "shellcheck" },
             ["java"] = { "checkstyle" },
             ["c"] = { "cpplint" },
             ["c++"] = { "cpplint" },
             ["sql"] = { "sqlfluff" },
-            ["md"] = { "textlint" },
-            ["_"] = {},
-            -- Use the "*" filetype to run linters on all filetypes.
-            -- ['*'] = { 'global linter' },
-            -- Use the "_" filetype to run linters on filetypes that don't have other linters configured.
-            -- ['_'] = { 'fallback linter' },
+            ["html"] = { "markuplint" },
         },
     },
     config = function()
