@@ -1,7 +1,6 @@
 return {
     "echasnovski/mini.pick",
 
-    lazy = false,
     dependencies = {
         "BurntSushi/ripgrep",
         "echasnovski/mini.extra",
@@ -25,18 +24,17 @@ return {
         })
     end,
     keys = {
-        vim.keymap.set(
-            "n",
+        {
             "<leader>fe",
             "<Cmd>Pick explorer<CR>",
-            { silent = true, noremap = true }
-        ),
-        vim.keymap.set(
-            "n",
+        },
+        {
             "<leader>fg",
             "<Cmd>Pick git_files<CR>",
-            { silent = true, noremap = true }
-        ),
-        vim.keymap.set("n", "<leader>p", ":Pick ", { noremap = true }),
+        },
+        {
+            "<leader>p",
+            ":Pick ",
+        },
     },
 }
