@@ -29,4 +29,12 @@ return {
             level = "WARN",
         })
     end,
+    config = function()
+        vim.keymap.set(
+            "n",
+            "<leader>d",
+            "<Cmd>NoiceDismiss<CR>",
+            { silent = true, noremap = true }
+        )
+    end,
 }
