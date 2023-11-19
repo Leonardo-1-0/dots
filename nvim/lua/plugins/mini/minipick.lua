@@ -45,6 +45,10 @@ return {
             "<Cmd>Pick options<CR>",
         },
         {
+            "<leader>fb",
+            "<Cmd>Pick buffers<CR>",
+        },
+        {
             "<leader>p",
             ":Pick ",
         },
