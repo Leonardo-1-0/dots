@@ -51,9 +51,22 @@ return {
         lspconfig.sqlls.setup({
             capabilities = capabilities,
         })
-        lspconfig.html.setup({
+        --[[ lspconfig.html.setup({
             capabilities = capabilities,
             filetypes = { "html", "markdown" },
+        }) ]]
+        lspconfig.rust_analyzer.setup({
+            capabilities = capabilities,
+            settings = {
+                ["rust-analyzer"] = {
+                    check = {
+                        command = "clippy",
+                    },
+                    diagnostics = {
+                        enable = true,
+                    },
+                },
+            },
         })
 
         local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
