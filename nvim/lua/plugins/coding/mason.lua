@@ -45,4 +45,10 @@ return {
             "sqlfluff",
         },
     },
+    keys = {
+        {
+            "<leader>m",
+            "<Cmd>Mason<CR>",
+        },
+    },
 }
