@@ -18,12 +18,13 @@ return {
             "lua-language-server",
             "pyright",
             "texlab",
-            "html-lsp",
+            "htmlx",
             "bash-language-server",
             "clangd",
             "jdtls",
             "haskell-language-server",
             "sqlls",
+            "rust-analyzer",
 
             -- formatters
             "stylua",
@@ -33,6 +34,7 @@ return {
             "shfmt",
             "clang-format",
             "sqlfmt",
+            "rustfmt",
 
             -- linters
             "selene",
