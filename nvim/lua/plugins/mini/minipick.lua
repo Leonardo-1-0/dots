@@ -33,6 +33,18 @@ return {
             "<Cmd>Pick git_files<CR>",
         },
         {
+            "<leader>fd",
+            "<Cmd>Pick diagnostic<CR>",
+        },
+        {
+            "<leader>fk",
+            "<Cmd>Pick keymaps<CR>",
+        },
+        {
+            "<leader>fo",
+            "<Cmd>Pick options<CR>",
+        },
+        {
             "<leader>p",
             ":Pick ",
         },
