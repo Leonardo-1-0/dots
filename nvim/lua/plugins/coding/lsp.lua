@@ -51,10 +51,10 @@ return {
         lspconfig.sqlls.setup({
             capabilities = capabilities,
         })
-        --[[ lspconfig.html.setup({
+        lspconfig.htmx.setup({
             capabilities = capabilities,
-            filetypes = { "html", "markdown" },
-        }) ]]
+            filetypes = { "xhtml", "html", "markdown" },
+        })
         lspconfig.rust_analyzer.setup({
             capabilities = capabilities,
             settings = {
