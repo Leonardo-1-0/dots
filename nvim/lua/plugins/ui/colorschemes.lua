@@ -1,28 +1,32 @@
 return {
-    -- Configure LazyVim to load the choosen theme
-    {
-        "LazyVim/LazyVim",
-        opts = {
-            colorscheme = "gruvbox",
-            -- colorscheme = "tokyonight",
-        },
-    },
-
     {
         "ellisonleao/gruvbox.nvim",
-        opts = {
-            transparent_mode = true,
-        }
+
+        config = function()
+            require("gruvbox").setup({
+                transparent_mode = true,
+            })
+            --[[ vim.o.background = "light" ]]
+            vim.cmd.colorscheme("gruvbox")
+        end,
     },
 
     {
         "folke/tokyonight.nvim",
-        opts = {
-            transparent = true,
-            styles = {
-                sidebars = "transparent",
-                floats = "transparent",
-            },
-        },
-    }
+
+        config = function()
+            require("tokyonight").setup({
+                style = "storm",
+                --[[ style = "night", ]]
+                --[[ style = "moon", ]]
+                transparent = true,
+                styles = {
+                    sidebars = "transparent",
+                    floats = "transparent",
+                },
+            })
+            --[[ vim.o.background = "light" ]]
+            --[[ vim.cmd.colorscheme("tokyonight") ]]
+        end,
+    },
 }
