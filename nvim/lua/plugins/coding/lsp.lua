@@ -57,7 +57,7 @@ return {
             involves creating a .sqllsrc.json file with the required config
             at the root of the project ]]
         })
-        lspconfig.htmx.setup({
+        lspconfig.html.setup({
             capabilities = capabilities,
             filetypes = { "xhtml", "html", "markdown" },
         })
