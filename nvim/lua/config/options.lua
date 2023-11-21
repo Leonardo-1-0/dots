@@ -34,6 +34,7 @@ vim.opt.splitright = true
 
 -- folding
 vim.opt.foldmethod = "indent" -- set folding groups to be automatically detected by indentation (as opposed to manually)
+vim.cmd("set foldlevelstart=99") -- set all folds open when entering a buffer. Set to 0 to have them all closed when opening a buffer.
 vim.keymap.set({ "n", "v" }, "<leader>zc", "zC", { noremap = true, silent = true })
 vim.keymap.set({ "n", "v" }, "<leader>zo", "zO", { noremap = true, silent = true })
 vim.keymap.set({ "n", "v" }, "<leader>zm", "zM", { noremap = true, silent = true })
