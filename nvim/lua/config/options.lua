@@ -31,3 +31,10 @@ vim.opt.colorcolumn = "120"
 vim.opt.scrolloff = 8
 vim.opt.swapfile = false
 vim.opt.splitright = true
+
+-- folding
+vim.opt.foldmethod = "indent" -- set folding groups to be automatically detected by indentation (as opposed to manually)
+vim.keymap.set({ "n", "v" }, "<leader>zc", "zC", { noremap = true, silent = true })
+vim.keymap.set({ "n", "v" }, "<leader>zo", "zO", { noremap = true, silent = true })
+vim.keymap.set({ "n", "v" }, "<leader>zm", "zM", { noremap = true, silent = true })
+vim.keymap.set({ "n", "v" }, "<leader>zn", "zn", { noremap = true, silent = true })
