@@ -1,16 +1,16 @@
 vim.g.mapleader = " "
 
 vim.cmd("syntax on")
-
 vim.cmd("set number")
 vim.cmd("set relativenumber")
+vim.cmd("set clipboard+=unnamedplus") -- sync nvim with system clipboard
 
 -- General Vim bindings
-vim.api.nvim_set_keymap("n", "oo", "o<Esc>k", { noremap = true })
-vim.api.nvim_set_keymap("n", "OO", "O<Esc>j", { noremap = true })
-vim.api.nvim_set_keymap("n", "z", "zz", { noremap = true })
-vim.api.nvim_set_keymap("n", "<C-u>", "<C-u>zz", { noremap = true })
-vim.api.nvim_set_keymap("n", "<C-d>", "<C-d>zz", { noremap = true })
+vim.keymap.set("n", "oo", "o<Esc>k", { noremap = true })
+vim.keymap.set("n", "OO", "O<Esc>j", { noremap = true })
+vim.keymap.set("n", "z", "zz", { noremap = true })
+vim.keymap.set("n", "<C-u>", "<C-u>zz", { noremap = true })
+vim.keymap.set("n", "<C-d>", "<C-d>zz", { noremap = true })
 
 -- Tabs = 4 spaces
 vim.o.tabstop = 4 -- Number of spaces a TAB counts for
