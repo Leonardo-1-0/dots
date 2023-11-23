@@ -48,15 +48,6 @@ return {
         lspconfig.hls.setup({
             capabilities = capabilities,
         }) -- haskell language server
-        lspconfig.sqlls.setup({
-            root_dir = function() -- setup lsp in 'single-file' mode
-                return "~/.config/nvim"
-            end,
-            --[[ To see how to setup for a project,
-            visit joe-re/sql-language-server on github. The proper setup
-            involves creating a .sqllsrc.json file with the required config
-            at the root of the project ]]
-        })
         lspconfig.html.setup({
             capabilities = capabilities,
             filetypes = { "xhtml", "html", "markdown" },
