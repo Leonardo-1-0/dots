@@ -1,0 +1,52 @@
+[[language]]
+name = "rust"
+auto-format = true
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
+
+
+[[language]]
+name = "python"
+file-types = ["py", "ipy"]
+comment-token = "#"
+indent = { tab-width = 4, unit = "\t" }
+roots = [ "pyproject.toml", "setup.py" ]
+language-servers = [ "pyright", "ruff" ]
+
+[language-server.pyright.config.python.analysis]
+typeCheckingMode = "basic"
+
+[language-server.ruff]
+command = "ruff-lsp"
+
+[language-server.ruff.config.settings]
+args = ["--ignore", "E501"]
+
+[language.formatter]
+command = "black"
+args = ["--line-length", "90", "--quiet", "-"]
+
+
+
+[[language]]
+name = "html"
+file-types = ["html", "htmx", "xml"]
+language-servers = [ "vscode-html-language-server" ]
+
+
+
+[[language]]
+name = "css"
+language-servers = [ "css-languageserver" ]
+
+
+
+[[language]]
+name = "sql"
+language-servers = [ "sql-language-server" ]
+
+[language-server.sql-language-server]
+command = "sql-language-server"
+args = ["up", "--method", "stdio"]

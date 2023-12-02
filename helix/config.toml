@@ -1,0 +1,43 @@
+theme = "gruvbox_dark_soft"
+
+[editor]
+line-number = "relative"
+cursorline = true
+bufferline = "multiple"
+color-modes = true
+text-width = 90
+insert-final-newline = false
+auto-completion = true
+idle-timeout = 0
+
+[editor.statusline]
+left = ["mode", "diagnostics", "version-control"]
+center = ["file-base-name"]
+right = ["spinner", "file-modification-indicator", "file-type", "file-encoding", "read-only-indicator", "position-percentage"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.file-picker]
+hidden = false
+git-ignore = false
+
+[editor.indent-guides]
+render = true
+character = "▏"
+skip-levels = 0
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 25 # increase value to reduce forced mid-word wrapping
+max-indent-retain = 0
+wrap-indicator = ""  # set wrap-indicator to "" to hide it
+
+
+[keys.normal]
+"$" = "goto_line_end"
+0 = "goto_line_start"
+G = "goto_last_line"
+V = "extend_line_below"
+z = "align_view_center"
