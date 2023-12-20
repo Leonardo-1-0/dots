@@ -1,0 +1,29 @@
+{
+    "layer": "top",
+    "modules-left": ["sway/mode"],
+    "modules-center": ["sway/window", "sway/workspaces"],
+    "modules-right": ["battery", "clock"],
+    "sway/window": {
+        "max-length": 50
+    },
+    // still not working :(
+    "sway/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+                "1": "1",
+                "2": "2",
+                "3": "3",
+                "4": "4",
+        },
+        "sort-by-number": true
+    },
+    //
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}"
+    }
+}
