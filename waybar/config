@@ -1,24 +1,32 @@
 {
     "layer": "top",
-    "modules-left": ["sway/mode"],
-    "modules-center": ["sway/window", "sway/workspaces"],
-    "modules-right": ["battery", "clock"],
-    "sway/window": {
-        "max-length": 50
+    "modules-left": ["hyprland/window"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["pulseaudio/slider", "backlight/slider", "memory", "network", "battery", "clock"],
+    "hyprland/window": {
+        "format": "{title}"
     },
-    // still not working :(
-    "sway/workspaces": {
-        "format": "{icon}",
+    "hyprland/workspaces": {
+        // "format": "{icon}",
+        "format": "{name}",
         "on-click": "activate",
-        "format-icons": {
-                "1": "1",
-                "2": "2",
-                "3": "3",
-                "4": "4",
-        },
-        "sort-by-number": true
+        // "format-icons": {
+        //         "1": "",
+        //         "2": "",
+        //         "3": "",
+        //         "4": "",
+        // },
+        "persistent-workspaces": {
+                "*": 3,
+        }
     },
-    //
+    "pulseaudio/slider": {},
+    "backlight/slider": {},
+    "memory": {
+        "interval": 30,
+        "format": "{percentage}%"
+    },
+    "network": {},
     "battery": {
         "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""]
