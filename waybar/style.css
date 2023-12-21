@@ -1,0 +1,25 @@
+* {
+    font-size: 16px;
+    border: none;
+    border-radius: 0;
+    color: #66ACED;
+}
+
+window#waybar {
+    background-color: rgba(0,0,0,0);
+    font-family: JetBrains Mono Nerd Font;
+    font-size: 16px;
+    /* border-radius: 22px; */
+}
+
+
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#backlight
+#clock,
+#battery,
+#custom-power {
+    padding: 0px 10px;
+}
