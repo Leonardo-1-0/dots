@@ -1,20 +1,20 @@
 * {
-    font-size: 16px;
     border: none;
     border-radius: 0;
+    padding: 0;
     color: #66ACED;
 }
 
 window#waybar {
     background-color: rgba(0,0,0,0);
     font-family: JetBrains Mono Nerd Font;
-    font-size: 16px;
-    /* border-radius: 22px; */
+    font-size: 18px;
 }
 
 
 #cpu,
 #memory,
+#workspaces,
 #network,
 #pulseaudio,
 #backlight
@@ -22,4 +22,26 @@ window#waybar {
 #battery,
 #custom-power {
     padding: 0px 10px;
+}
+
+/* #cpu {
+    margin-left: 5px;
+}
+#custom-power {
+    margin-right: 5px;
+} */
+
+.modules-left {
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.modules-center {
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.modules-right {
+    border-radius: 20px;
+    background-color: #ffffff;
 }
