@@ -1,10 +1,11 @@
 * {
     font-family: "JetBrains Mono Nerd Font";
-    font-size: 18px;
+    font-size: 20px;
     padding: 0px;
     border-radius: 20px;
     color: #66ACED;
 }
+
 
 window#waybar {
     background-color: transparent;
@@ -12,7 +13,7 @@ window#waybar {
 
 
 .modules-left, .modules-center, .modules-right{
-    margin: 6px 10px 0px 10px;
+    margin: 8px 12px 0px 12px;
     background-color: #ffffff;
 }
 
@@ -34,4 +35,28 @@ window#waybar {
 #clock,
 #battery {
     padding: 0px 10px;
+}
+
+
+#workspaces button.active {
+    background-color: rgba(255 ,68 ,153 , 0.15);
+    border-radius: 15px;
+    border-bottom: 1.5px solid  #ff4499;
+    margin-bottom: 1px;
+}
+
+#workspaces button.urgent {
+    color: rgba(255 ,68 ,153 , 1.0);
+}
+
+#battery.warning {
+    color: orange;
+}
+
+#battery.critical {
+    color: red;
+}
+
+#custom-power {
+    color: rgba(255 ,68 ,153 , 1.0);
 }
