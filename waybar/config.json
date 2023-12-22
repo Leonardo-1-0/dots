@@ -110,7 +110,8 @@
         "tooltip": true
     },
     "custom/power": {
-        "format": "⏻",
+        "format": "{icon}",
+        "format-icons": "⏻ ",
         "tooltip": false,
         "on-click": "wlogout --protocol layer-shell"
     }

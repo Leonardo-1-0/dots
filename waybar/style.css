@@ -19,15 +19,12 @@ window#waybar {
 #pulseaudio,
 #backlight
 #clock,
-#battery,
-#custom-power {
+/* #custom-power, */
+#battery {
     padding: 0px 10px;
 }
 
-/* #cpu {
-    margin-left: 5px;
-}
-#custom-power {
+/* #custom-power {
     margin-right: 5px;
 } */
 
