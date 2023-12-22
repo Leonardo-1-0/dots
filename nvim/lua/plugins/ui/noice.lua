@@ -37,4 +37,5 @@ return {
             { silent = true, noremap = true }
         )
     end,
+    enabled = false
 }

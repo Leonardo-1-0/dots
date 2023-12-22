@@ -6,8 +6,9 @@ return {
             require("gruvbox").setup({
                 transparent_mode = true,
             })
-            --[[ vim.cmd.colorscheme("gruvbox") ]]
+            vim.cmd.colorscheme("gruvbox")
         end,
+        enabled = false
     },
 
     {
@@ -24,8 +25,9 @@ return {
                     floats = "transparent",
                 },
             })
-            --[[ vim.cmd.colorscheme("tokyonight") ]]
+            vim.cmd.colorscheme("tokyonight")
         end,
+        enabled = false
     },
 
     {
@@ -37,5 +39,6 @@ return {
             vim.g.sonokai_better_performance = 1
             vim.cmd.colorscheme("sonokai")
         end,
+        enabled = false
     },
 }

@@ -92,4 +92,6 @@ return {
             vim.lsp.buf.format({ async = true })
         end, opts),
     },
+
+    enabled = false
 }
