@@ -40,7 +40,7 @@ window#waybar {
 
 #workspaces button.active {
     background-color: rgba(255 ,68 ,153 , 0.15);
-    border-radius: 15px;
+    border-radius: 10px;
     border-bottom: 1.5px solid  #ff4499;
     margin-bottom: 1px;
 }
