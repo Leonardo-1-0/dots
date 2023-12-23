@@ -1,9 +1,12 @@
+@import url("/home/leo/.cache/wal/colors-waybar.css");
+
+
 * {
     font-family: "JetBrains Mono Nerd Font";
     font-size: 20px;
     padding: 0px;
     border-radius: 20px;
-    color: #66ACED;
+    color: @foreground;
 }
 
 
@@ -12,15 +15,12 @@ window#waybar {
 }
 
 
-.modules-left, .modules-center, .modules-right{
+.modules-left,
+.modules-center,
+.modules-right {
     margin: 8px 12px 0px 12px;
-    background-color: #ffffff;
+    background-color: @background;
 }
-
-/* #workspaces button.active {
-    font-weight: bold;
-    border-bottom: 3px transparent;
-} */
 
 
 #cpu,
@@ -31,22 +31,20 @@ window#waybar {
 #network,
 #pulseaudio,
 #pulseaudio.microphone,
-#backlight
-#clock,
+#backlight #clock,
 #battery {
     padding: 0px 10px;
 }
 
 
 #workspaces button.active {
-    background-color: rgba(255 ,68 ,153 , 0.15);
-    border-radius: 15px;
-    border-bottom: 1.5px solid  #ff4499;
+    border-radius: 10px;
+    border-bottom: 1.5px solid @color4;
     margin-bottom: 1px;
 }
 
 #workspaces button.urgent {
-    color: rgba(255 ,68 ,153 , 1.0);
+    color: @color6;
 }
 
 #battery.warning {
@@ -58,5 +56,5 @@ window#waybar {
 }
 
 #custom-power {
-    color: rgba(255 ,68 ,153 , 1.0);
+    color: @color4;
 }
