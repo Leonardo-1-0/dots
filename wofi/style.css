@@ -3,7 +3,7 @@
     font-size: 25px;
     border-radius: 10px;
     border: 3px solid rgb(--wofi-rgb-color1);
-    background-color: rgb(--wofi-rgb-color0);
+    background-color: rgba(--wofi-rgb-color0, 0.8);
 }
 
 #input {
@@ -11,7 +11,7 @@
     border-bottom: 3px solid rgb(--wofi-rgb-color4);
     border-radius: 10px;
     padding: 5px;
-    background-color: rgb(--wofi-rgb-color0);
+    background-color: rgba(--wofi-rgb-color0, 0.8);
 }
 
 #entry:selected {
@@ -21,10 +21,11 @@
     border-top: 1px solid rgb(--wofi-rgb-color4);
     border-right: 1px solid rgb(--wofi-rgb-color4);
     border-bottom: 1px solid rgb(--wofi-rgb-color4);
+    background-color: rgb(--wofi-rgb-color0);
 }
 
 expander > list > #entry {
-    background-color: rgb(--wofi-rgb-color0);
+    background-color: rgba(--wofi-rgb-color0, 0.8);
 }
 
 #img {
