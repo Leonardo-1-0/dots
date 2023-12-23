@@ -1,0 +1,7 @@
+width=40%
+allow_images=true
+insensitive=true
+matching=fuzzy
+parse_search=true
+lines=6
+image_size=25
