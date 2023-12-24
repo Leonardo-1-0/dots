@@ -13,25 +13,21 @@ window {
 
 
 button {
-    color: @foreground;
+    background: alpha(@background, 0.7);
     font-size: 25px;
-
-    background-repeat: no-repeat;
+    font-weight: bold;
+    border: 3px solid @color1;
     background-position: center;
     background-size: 25%;
-
-    border-style: solid;
-    background-color: alpha(@background, 0.3);
-    border: 3px solid @color6;
+    background-repeat: no-repeat;
 }
 
 
 button:focus,
 button:active,
 button:hover {
-    color: @color4;
-    background-color: alpha(@background, 0.3);
     border: 3px solid @color4;
+    color: @color4;
 }
 
 
