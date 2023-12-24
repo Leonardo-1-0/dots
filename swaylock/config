@@ -1,0 +1,50 @@
+
+daemonize
+clock
+
+#24 HRS clock format and standard Europe Date Format
+timestr=%H:%M
+datestr=%d %B
+
+# Add current display as background
+screenshots
+
+# Add an image as a background. You need to disable screenshots above
+# image=$HOME/Pictures/synthwave_3.jpg
+
+# Effect for background
+# NOTE: if you choose image as wallpaper, you may want to comment (#) these effects 
+effect-blur=9x5
+# effect-vignette=0.5:0.5
+# effect-greyscale
+# effect-pixelate=5
+
+color=02030780
+font="JetBrains Mono Nerd Font"
+indicator
+indicator-caps-lock
+indicator-radius=200
+indicator-thickness=20
+
+text-color=aebccc
+text-caps-lock-color=aebccc
+inside-color=020307
+line-color=020307
+ring-color=aebccc
+separator-color=00000000
+text-ver-color=aebccc
+inside-ver-color=aebccc
+line-ver-color=265896
+ring-ver-color=265896
+text-wrong-color=ff0000
+inside-wrong-color=020307
+line-wrong-color=020307
+ring-wrong-color=ff0000
+text-clear-color=020307
+inside-clear-color=aebccc
+line-clear-color=00ff00
+ring-clear-color=aebccc
+key-hl-color=E32D90
+bs-hl-color=aebccc
+
+fade-in=0.5
