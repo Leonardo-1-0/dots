@@ -2,16 +2,20 @@
     font-family: "JetBrains Mono Nerd Font";
     font-size: 25px;
     border-radius: 10px;
-    border: 3px solid rgb(--wofi-rgb-color1);
+    /* border: 3px solid rgb(--wofi-rgb-color1); */
     background-color: rgba(--wofi-rgb-color0, 0.8);
 }
 
 #input {
-    border: 3px solid rgb(--wofi-rgb-color1);
+    /* border: 3px solid rgb(--wofi-rgb-color1); */
     border-bottom: 3px solid rgb(--wofi-rgb-color4);
+    /* fix unwanted persistent border */
+    box-shadow: none;
+    /* around search box */
+    text-shadow: none;
     border-radius: 10px;
     padding: 5px;
-    background-color: rgba(--wofi-rgb-color0, 0.8);
+    background-color: rgba(--wofi-rgb-color0, 0.4);
 }
 
 #entry:selected {
@@ -24,7 +28,7 @@
     background-color: rgb(--wofi-rgb-color0);
 }
 
-expander > list > #entry {
+expander>list>#entry {
     background-color: rgba(--wofi-rgb-color0, 0.8);
 }
 
