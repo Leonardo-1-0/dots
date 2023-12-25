@@ -10,16 +10,21 @@
   background-color: var(--background) !important;
 }
 
+#urlbar {
+  color: var(--foreground) !important;
+}
+
+#urlbar-background {
+    background: var(--background) !important;
+    border-radius: 20px !important;
+}
+
 #urlbar-input-container {
-  background-color: var(--background);
-  color: var(--foreground);
   border: 1px solid var(--color4) !important;
   border-radius: 20px !important;
 }
 
-#urlbar-background {
-  border-radius: 20px !important;
-}
+/* TODO: change urlbar dorpdown highlight color */
 
 #PersonalToolbar {
   background-color: var(--background) !important;
@@ -31,6 +36,28 @@
   border-radius: 10px !important;
 }
 
+toolbar .toolbarbutton-1 {
+  color: var(--foreground) !important;
+}
+
+/* change the highlight color of selected items in the urlbar dropdown menu */
+#urlbar-input::selection {
+  background-color: var(--color1) !important;
+}
+
+.urlbarView-row {
+    border-radius: 10px !important;
+}
+.urlbarView-row[selected],
+.urlbarView-row:hover { 
+  background: var(--color1) !important;
+}
+.searchbar-engine-one-off-item[selected],
+.searchbar-engine-one-off-item:hover {
+  background-color: var(--color1) !important;
+}
+
+/* self explainatory */
 #save-to-pocket-button {
   display: none;
 }
@@ -45,6 +72,7 @@
   --identity-icon-color: none !important;
 }
 
+/* mac like window buttons */
 .titlebar-min{
     appearance: none !important;
 /*     background-color: yellow !important;
@@ -53,7 +81,6 @@
     border-radius: 10px;
     margin: 0.3em !important; */
 }
-
 .titlebar-restore{
     appearance: none !important;
 /*     background-color: orange !important;
@@ -62,7 +89,6 @@
     border-radius: 10px;
     margin: 0.3em !important; */
 }
-
 .titlebar-close{
     appearance: none !important;
     background-color: red !important;

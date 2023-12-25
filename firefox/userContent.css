@@ -1,0 +1,9 @@
+@import url('/home/leo/.cache/wal/colors.css');
+
+
+/* set pages background color */
+@-moz-document url("about:home"),url("about:blank"),url("about:newtab"),url("about:privatebrowsing"){
+  body{
+    background-color: var(--background) !important;
+  }
+}
