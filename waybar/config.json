@@ -24,10 +24,12 @@
         "all-outputs": true,
         "active-only": false,
         "on-click": "activate",
-        "format": " {icon} ",
+        "format": "{icon}",
         "on-scroll-up": "hyprctl dispatch workspace e+1",
         "on-scroll-down": "hyprctl dispatch workspace e-1",
         "format-icons": {
+            "1": "",
+            "2": "",
             "urgent": "",
             "default": ""
         },
@@ -136,6 +138,6 @@
         "format": "{icon}",
         "format-icons": "⏻ ",
         "tooltip": false,
-        "on-click": "wlogout --protocol layer-shell"
+        "on-click": "wlogout --protocol layer-shell --layout /home/leo/.config/wlogout/layout --css /home/leo/.config/wlogout/style.css"
     }
 }

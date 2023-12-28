@@ -26,7 +26,6 @@ window#waybar {
 #cpu,
 #memory,
 #idle_inhibitor,
-#workspaces,
 #tray,
 #network,
 #pulseaudio,
@@ -36,11 +35,18 @@ window#waybar {
     padding: 0px 10px;
 }
 
+#workspaces button {
+    padding: 0px 15px 0px 10px;
+}
+
+#custom-power {
+    margin: 2px;
+    color: @color4;
+}
 
 #workspaces button.active {
     border-radius: 10px;
     border-bottom: 1.5px solid @color4;
-    margin-bottom: 1px;
 }
 
 #workspaces button.urgent {
@@ -53,8 +59,4 @@ window#waybar {
 
 #battery.critical {
     color: red;
-}
-
-#custom-power {
-    color: @color4;
 }
