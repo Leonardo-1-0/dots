@@ -1,5 +1,10 @@
 return {
     {
+        'AlphaTechnolog/pywal.nvim',
+
+        opts = {}
+    },
+    {
         "ellisonleao/gruvbox.nvim",
 
         config = function()
