@@ -33,6 +33,9 @@ return {
         lspconfig.pyright.setup({
             capabilities = capabilities,
         })
+        lspconfig.cssls.setup({
+            capabilities = capabilities,
+        })
         lspconfig.texlab.setup({
             capabilities = capabilities,
         })
@@ -93,5 +96,5 @@ return {
         end, opts),
     },
 
-    enabled = false
+    --[[     enabled = false ]]
 }
