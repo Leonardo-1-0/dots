@@ -1,4 +1,5 @@
-WALLPAPER="/home/leo/Pictures/synthwave_3.jpg"
+#WALLPAPER="/home/leo/Pictures/synthwave.jpg"
+WALLPAPER="/home/leo/Pictures/halo.jpg"
 
 wal -i ${WALLPAPER}
 swww kill

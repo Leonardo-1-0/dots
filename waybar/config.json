@@ -1,7 +1,7 @@
 {
     "height": 35,
     "layer": "top",
-    "modules-left": ["cpu", "memory", "idle_inhibitor"],
+    "modules-left": ["cpu", "memory", "idle_inhibitor", "custom/wl-gammarelay-temperature"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": [
         "tray",
@@ -19,6 +19,13 @@
             "activated": " ",
             "deactivated": " "
         }
+    },
+    "custom/wl-gammarelay-temperature": {
+        "format": "{icon}",
+        "format-icons": " ",
+        "exec": "wl-gammarelay --subscribe Temperature",
+        "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n +250",
+        "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -250"
     },
     "hyprland/workspaces": {
         "all-outputs": true,
