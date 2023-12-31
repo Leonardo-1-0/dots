@@ -1,7 +1,13 @@
 {
     "height": 35,
     "layer": "top",
-    "modules-left": ["cpu", "memory", "idle_inhibitor", "custom/wl-gammarelay-temperature"],
+    "output": "eDP-1",
+    "modules-left": [
+        "cpu",
+        "memory",
+        "idle_inhibitor",
+        "custom/wl-gammarelay-temperature"
+    ],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": [
         "tray",
