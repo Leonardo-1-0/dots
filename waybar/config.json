@@ -6,7 +6,7 @@
         "cpu",
         "memory",
         "idle_inhibitor",
-        "custom/wl-gammarelay-temperature",
+        "custom/wl_gammarelay_temperature",
         "custom/vpn"
     ],
     "modules-center": ["hyprland/workspaces"],
@@ -27,7 +27,7 @@
             "deactivated": " "
         }
     },
-    "custom/wl-gammarelay-temperature": {
+    "custom/wl_gammarelay_temperature": {
         "format": "{icon}",
         "format-icons": " ",
         "exec": "wl-gammarelay --subscribe Temperature",
@@ -36,7 +36,7 @@
     },
     "custom/vpn": {
         "format": "{icon}",
-        "format-icons": "  ",
+        "format-icons": " ",
         "tooltip": false,
         "on-click": "kitty sudo openconnect vpn.uibk.ac.at &"
     },

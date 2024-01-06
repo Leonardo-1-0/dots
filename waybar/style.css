@@ -26,6 +26,7 @@ window#waybar {
 #cpu,
 #memory,
 #idle_inhibitor,
+#custom-wl_gammarelay_temperature,
 #tray,
 #network,
 #pulseaudio,
