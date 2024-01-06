@@ -11,6 +11,7 @@
     "modules-center": ["hyprland/workspaces"],
     "modules-right": [
         "tray",
+        "custom/vpn",
         "network",
         "pulseaudio",
         "pulseaudio#microphone",
@@ -98,6 +99,12 @@
         "format-icons": ["󱩎 ", "󱩏 ", "󱩐 ", "󱩑 ", "󱩒 ", "󱩓 ", "󱩔 ", "󱩕 ", "󱩖 ", "󰛨 "],
         "on-scroll-up": "brightnessctl set +5%",
         "on-scroll-down": "brightnessctl set 5%-"
+    },
+    "custom/vpn": {
+        "format": "{icon}",
+        "format-icons": "  ",
+        "tooltip": false,
+        "on-click": "kitty sudo openconnect vpn.uibk.ac.at &"
     },
     "network": {
         "format-wifi": "{icon}",
