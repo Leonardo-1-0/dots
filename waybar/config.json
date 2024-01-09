@@ -23,8 +23,8 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": " ",
-            "deactivated": " "
+            "activated": " ",
+            "deactivated": " "
         }
     },
     "custom/wl_gammarelay_temperature": {
@@ -36,9 +36,9 @@
     },
     "custom/vpn": {
         "format": "{icon}",
-        "format-icons": " ",
+        "format-icons": " ",
         "tooltip": false,
-        "on-click": "kitty sudo openconnect vpn.uibk.ac.at &"
+        "on-click": "kitty sudo openconnect --user=c7241150 vpn.uibk.ac.at &",
     },
     "hyprland/workspaces": {
         "all-outputs": true,
@@ -108,7 +108,7 @@
     },
     "network": {
         "format-wifi": "{icon}",
-        "format-ethernet": "󰈁",
+        "format-ethernet": "",
         "format-disconnected": "󰖪",
         "tooltip-format": "{essid}",
         "on-click": "kitty nmtui",
