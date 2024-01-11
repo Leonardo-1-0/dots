@@ -25,14 +25,17 @@
         "format-icons": {
             "activated": " ",
             "deactivated": " "
-        }
+        },
+        "tooltip": "deactivate automatic stand-by/power-off"
     },
     "custom/wl_gammarelay_temperature": {
         "format": "{icon}",
         "format-icons": " ",
         "exec": "wl-gammarelay --subscribe Temperature",
         "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n +250",
-        "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -250"
+        "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -250",
+        "on-click": "busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Brightness d 1.0 && busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Temperature q 2800",
+        "tooltip": false
     },
     "custom/vpn": {
         "format": "{icon}",
@@ -48,8 +51,8 @@
         "on-scroll-up": "hyprctl dispatch workspace e+1",
         "on-scroll-down": "hyprctl dispatch workspace e-1",
         "format-icons": {
-            "1": "",
-            "2": "",
+            "1": "",
+            "2": "",
             "urgent": "",
             "default": ""
         },
