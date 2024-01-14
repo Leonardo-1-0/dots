@@ -34,7 +34,7 @@
         "exec": "wl-gammarelay --subscribe Temperature",
         "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n +250",
         "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -250",
-        "on-click": "busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Brightness d 1.0 && busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Temperature q 2800",
+        "on-click": "busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Brightness d 1.0 && busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Temperature q 2750",
         "tooltip": false
     },
     "custom/vpn": {
@@ -54,7 +54,7 @@
             "1": "",
             "2": "",
             "urgent": "",
-            "default": ""
+            "default": ""
         },
         "persistent-workspaces": {
             "*": 3
@@ -105,7 +105,7 @@
     "backlight": {
         "format": "{icon} ",
         "tooltip-format": "{percent}",
-        "format-icons": ["󱩎 ", "󱩏 ", "󱩐 ", "󱩑 ", "󱩒 ", "󱩓 ", "󱩔 ", "󱩕 ", "󱩖 ", "󰛨 "],
+        "format-icons": ["󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩕", "󱩖", "󰛨"],
         "on-scroll-up": "brightnessctl set +5%",
         "on-scroll-down": "brightnessctl set 5%-"
     },
@@ -121,7 +121,7 @@
         "format": "{icon}",
         "format-muted": "",
         "format-icons": {
-            "default": ["", "", "󰕾"]
+            "default": ["", "", ""]
         },
         "on-click": "pamixer -t",
         "on-click-right": "pavucontrol &",

@@ -4,9 +4,6 @@
 * {
     font-family: "JetBrains Mono Nerd Font";
     font-size: 20px;
-    padding: 0px;
-    border-radius: 20px;
-    color: @foreground;
 }
 
 
@@ -18,40 +15,66 @@ window#waybar {
 .modules-left,
 .modules-center,
 .modules-right {
-    margin: 8px 12px 0px 12px;
     background-color: @background;
+    border-radius: 20px;
+    margin-top: 5px;
 }
 
+.modules-left {
+    margin-left: 7px;
+}
+
+.modules-right {
+    margin-right: 7px;
+}
 
 #cpu,
-#memory,
+#memory {
+    margin-left: 10px;
+}
+
 #idle_inhibitor,
-#custom-wl_gammarelay_temperature,
-#tray,
-#network,
-#pulseaudio,
-#pulseaudio.microphone,
-#backlight #clock,
-#battery {
-    padding: 0px 10px;
+#custom-wl_gammarelay_temperature {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #workspaces button {
-    padding: 0px 15px 0px 10px;
+    border-radius: 20px;
+    padding-right: 17.5px;
+    margin: 1px;
+}
+
+#tray,
+#network {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+#pulseaudio {
+    margin-right: 20px;
+}
+
+#pulseaudio.microphone,
+#backlight {
+    margin-right: 3px;
+}
+
+#clock,
+#battery {
+    margin-right: 12px;
 }
 
 #custom-power {
-    margin: 2px;
+    margin-right: 5px;
+}
+
+#custom-power {
     color: @color4;
 }
 
 #workspaces button.active {
-    border-radius: 10px;
-    border-bottom: 1.5px solid @color4;
-}
-
-#workspaces button.urgent {
-    color: @color6;
+    background-color: @color4;
 }
 
 #battery.warning {
