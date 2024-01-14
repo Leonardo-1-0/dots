@@ -45,7 +45,11 @@ window#waybar {
     margin: 1px;
 }
 
-#tray,
+#tray {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
 #network {
     margin-left: 10px;
     margin-right: 20px;
