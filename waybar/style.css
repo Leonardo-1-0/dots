@@ -36,7 +36,11 @@ window#waybar {
 #idle_inhibitor,
 #custom-wl_gammarelay_temperature {
     margin-left: 10px;
-    margin-right: 10px;
+}
+
+#custom-vpn {
+    margin-left: 5px;
+    margin-right: 2px;
 }
 
 #workspaces button {
