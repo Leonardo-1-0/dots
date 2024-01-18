@@ -34,4 +34,5 @@ return {
             desc = "Open mini.files (cwd)",
         },
     },
+    enabled = false
 }

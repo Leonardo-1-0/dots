@@ -53,4 +53,5 @@ return {
             ":Pick ",
         },
     },
+    enabled = false
 }

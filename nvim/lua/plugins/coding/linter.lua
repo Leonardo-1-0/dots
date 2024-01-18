@@ -7,11 +7,11 @@ return {
     opts = {
         linters_by_ft = {
             ["lua"] = { "selene" },
-            ["python"] = { "flake8", "mypy" },
+            ["python"] = { "flake8", "mypy", "sonarlint-language-server" },
             ["bash"] = { "shellcheck" },
-            ["java"] = { "checkstyle" },
-            ["c"] = { "cpplint" },
-            ["c++"] = { "cpplint" },
+            ["java"] = { "sonarlint-language-server" },
+            ["c"] = { "cpplint", "sonarlint-language-server" },
+            ["c++"] = { "cpplint", "sonarlint-language-server" },
             ["sql"] = { "sqlfluff" },
             ["html"] = { "markuplint" },
         },

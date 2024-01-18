@@ -3,7 +3,7 @@ return {
 
     dependencies = { "williamboman/mason.nvim" },
     lazy = true,
-    event = { "BufReadPre", "BufNewFile" },
+    event = { "BufReadPre", "BufNewFile", "InsertLeave" },
     opts = {
         formatters_by_ft = {
             lua = { "stylua" },
@@ -12,7 +12,7 @@ return {
             html = { "htmlbeautifier" },
             markdown = { "mdformat" },
             sh = { "shfmt" },
-            java = { "clang-format" },
+            java = { "google-java-format" },
             c = { "clang-format" },
             cpp = { "clang-format" },
             sql = { "sqlfmt" },
