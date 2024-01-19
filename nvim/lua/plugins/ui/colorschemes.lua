@@ -1,8 +1,9 @@
 return {
     {
-        'AlphaTechnolog/pywal.nvim',
+        "AlphaTechnolog/pywal.nvim",
 
-        opts = {}
+        opts = {},
+        enabled = false,
     },
     {
         "ellisonleao/gruvbox.nvim",
@@ -13,7 +14,7 @@ return {
             })
             vim.cmd.colorscheme("gruvbox")
         end,
-        enabled = false
+        enabled = false,
     },
 
     {
@@ -32,7 +33,7 @@ return {
             })
             vim.cmd.colorscheme("tokyonight")
         end,
-        enabled = false
+        enabled = false,
     },
 
     {
@@ -44,6 +45,6 @@ return {
             vim.g.sonokai_better_performance = 1
             vim.cmd.colorscheme("sonokai")
         end,
-        enabled = false
+        --[[         enabled = false, ]]
     },
 }
